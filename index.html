@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alexander CD - Web Developer ">
+  <meta name="description" content="Use Redux with Jquery, sass and html" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.alexandercd.dev/">
+  <meta property="og:title" content="Alexander CD - Web Developer ">
+  <meta property="og:description" content="Use Redux with Jquery, sass and html">
+  <meta property="og:image" content="https://www.alexandercd.dev/assets/image/illustration.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.alexandercd.dev/">
+  <meta property="twitter:title" content="Alexander CD - Web Developer">
+  <title>Reducer Jquery</title>
+  <!-- 
+        Librarys Redux and Jquery
+    -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  
+  <link rel="stylesheet" href="./src/assets/styles/style.css" />
+</head>
+
+<body>
+  <h1> Use Redux with Jquery</h1>
+  <div class="container">
+    <form id="form">
+      <p>First Name: <span id="firstNameText"></span></p>
+      <input id="firstName" name="firstName" type="text" val="" />
+      <p>Last Name: <span id="lastNameText"></span></p>
+      <input id="lastName" name="lastName" type="text" val="" />
+      <p>Phone: <span id="phoneText"></span></p>
+      <input id="phone" name="phone" type="text" val="" />
+      <button type="submit" id="btnAdd" class="add">Add</button>
+    </form>
+    <div>
+      <table id="tableUsers">
+        <thead> 
+          <th>First Name</th> 
+          <th>Last Name</th> 
+          <th>Phone</th>
+          <th>Action</th> 
+        </thead>
+        <tbody >
+  
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="./src/assets/js/form.js" type="module"></script>
+</html>
